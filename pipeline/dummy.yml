@@ -11,4 +11,6 @@ jobs:
         run:
             path: echo
             args:
-            - hello world
+            - ${MESSAGE}
+        params:
+          MESSAGE: ((message))
