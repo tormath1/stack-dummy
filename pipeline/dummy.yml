@@ -9,8 +9,10 @@ jobs:
             type: docker-image
             source: {repository: busybox}
         run:
-            path: echo
-            args:
-            - ${MESSAGE}
+          path: /bin/sh
+          args:
+          - -ec
+          - |
+            echo ${MESSAGE}
         params:
           MESSAGE: ((message))
