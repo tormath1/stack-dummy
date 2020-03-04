@@ -1,6 +1,7 @@
 # Configuration of the CI pipeline
 name: 'Dummy stack'
 canonical: 'stack-dummy'
+status: 'public'
 description: 'This stack is a dummy stack which contain only a hello world pipeline'
 keywords:
   - 'concourse'
