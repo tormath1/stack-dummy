@@ -2,7 +2,7 @@
 version: '2'
 # Configuration of the Cycloid stack
 name: 'Dummy stack'
-canonical: 'stack-dummy'
+canonical: 'stack-dummy-with-cp'
 status: 'public'
 description: |
   This stack is a dummy stack which contain only a hello world pipeline.
@@ -22,6 +22,7 @@ config:
   default:
     name: 'Default'
     description: 'Default pipeline usecase'
+    cloud_provider: 'google'
     pipeline:
       pipeline:
         path: 'pipeline/pipeline.yml'
